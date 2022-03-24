@@ -23,20 +23,20 @@ class ThirdSection extends StatelessWidget {
                     RichText(
                       text: TextSpan(
                           text: 'How We Bring Your',
-                          style: GoogleFonts.redHatDisplay(
+                          style: GoogleFonts.nunito(
                               fontSize: 40,
                               color: grayDarkColor,
                               fontWeight: FontWeight.bold),
                           children: <TextSpan>[
                             TextSpan(
                                 text: ' Order\n',
-                                style: GoogleFonts.redHatDisplay(
+                                style: GoogleFonts.nunito(
                                     fontSize: 40,
                                     color: orangeColor,
                                     fontWeight: FontWeight.bold)),
                             TextSpan(
                               text: 'To Your Home',
-                              style: GoogleFonts.redHatDisplay(
+                              style: GoogleFonts.nunito(
                                   fontSize: 40,
                                   color: grayDarkColor,
                                   fontWeight: FontWeight.bold),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:leaffull_web_app/sections/fourth_section.dart';
 import 'package:leaffull_web_app/sections/second_section.dart';
 import 'package:leaffull_web_app/sections/third_section.dart';
 import 'colors.dart';
@@ -70,7 +71,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(mainAxisSize: MainAxisSize.min, children: [
                     FirstSection(),
                     SecondSection(),
-                    ThirdSection()
+                    ThirdSection(),
+                    FourthSection()
                   ]),
                 ),
                 Positioned(

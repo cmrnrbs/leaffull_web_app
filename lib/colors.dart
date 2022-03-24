@@ -7,3 +7,4 @@ Color lightTextColor = const Color(0xFF777777);
 Color greenColor = const Color(0xFF1E6D02);
 Color shadowColor = const Color(0xFF262626);
 Color stepColor = const Color(0xFF232931);
+Color productBgColor = const Color(0xFFF7F7F7);
