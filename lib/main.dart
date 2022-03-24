@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:leaffull_web_app/sections/fifth_section.dart';
 import 'package:leaffull_web_app/sections/fourth_section.dart';
 import 'package:leaffull_web_app/sections/second_section.dart';
+import 'package:leaffull_web_app/sections/sixth_section.dart';
 import 'package:leaffull_web_app/sections/third_section.dart';
 import 'colors.dart';
 import 'header.dart';
@@ -72,12 +74,53 @@ class _HomeScreenState extends State<HomeScreen> {
                     FirstSection(),
                     SecondSection(),
                     ThirdSection(),
-                    FourthSection()
+                    FourthSection(),
+                    FifthSection(),
+                    SixthSection()
                   ]),
                 ),
                 Positioned(
                     top: 724 - (isScrolled ? scrollController.offset : 0),
                     left: 15,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset('assets/dots.png'),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Image.asset('assets/dots.png'),
+                      ],
+                    )),
+                    Positioned(
+                    top: 2028 - (isScrolled ? scrollController.offset : 0),
+                    right: 15,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset('assets/dots.png'),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Image.asset('assets/dots.png'),
+                      ],
+                    )),
+                    Positioned(
+                    top: 3345 - (isScrolled ? scrollController.offset : 0),
+                    left: 15,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset('assets/dots.png'),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Image.asset('assets/dots.png'),
+                      ],
+                    )),
+                    Positioned(
+                    top: 4063 - (isScrolled ? scrollController.offset : 0),
+                    right: 15,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
