@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:leaffull_web_app/colors.dart';
+import '../colors.dart';
 
 class FifthSection extends StatelessWidget {
   const FifthSection({Key? key}) : super(key: key);

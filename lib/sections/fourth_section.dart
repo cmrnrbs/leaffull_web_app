@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:leaffull_web_app/components/product_item.dart';
+import '../components/product_item.dart';
 
 import '../colors.dart';
 

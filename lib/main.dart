@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:leaffull_web_app/sections/fifth_section.dart';
-import 'package:leaffull_web_app/sections/fourth_section.dart';
-import 'package:leaffull_web_app/sections/second_section.dart';
-import 'package:leaffull_web_app/sections/sixth_section.dart';
-import 'package:leaffull_web_app/sections/third_section.dart';
-import 'colors.dart';
+import 'sections/fifth_section.dart';
+import 'sections/fourth_section.dart';
+import 'sections/second_section.dart';
+import 'sections/seventh_section.dart';
+import 'sections/sixth_section.dart';
+import 'sections/third_section.dart';
 import 'header.dart';
 import 'sections/first_section.dart';
 
@@ -76,7 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ThirdSection(),
                     FourthSection(),
                     FifthSection(),
-                    SixthSection()
+                    SixthSection(),
+                    SeventhSection()
                   ]),
                 ),
                 Positioned(
@@ -106,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     )),
                     Positioned(
-                    top: 3345 - (isScrolled ? scrollController.offset : 0),
+                    top: 3394 - (isScrolled ? scrollController.offset : 0),
                     left: 15,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -119,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     )),
                     Positioned(
-                    top: 4063 - (isScrolled ? scrollController.offset : 0),
+                    top: 4104 - (isScrolled ? scrollController.offset : 0),
                     right: 15,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
