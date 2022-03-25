@@ -15,6 +15,7 @@ class Footer extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 220.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,10 +96,14 @@ class Footer extends StatelessWidget {
                 ],
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Row(
+                        mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text('Contact Us',
@@ -109,14 +114,67 @@ class Footer extends StatelessWidget {
                           SizedBox(
                             width: 10,
                           ),
-                          SizedBox(
-                            width: 34,
-                            child: Divider(
-                              thickness: 3,
-                              color: grayDarkColor,
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 10.0),
+                            child: Container(
+                              width: 34,
+                              height: 6,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(3),
+                                  color: grayDarkColor),
                             ),
                           )
                         ],
+                      ),
+                      SizedBox(
+                        height: 24,
+                      ),
+                      Text(
+                        'info@leaf.market',
+                        style: GoogleFonts.nunito(
+                          fontSize: 20,
+                          color: grayDarkColor,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 80,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('Office',
+                              style: GoogleFonts.nunito(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 10.0),
+                            child: Container(
+                              width: 34,
+                              height: 6,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(3),
+                                  color: grayDarkColor),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 24,
+                      ),
+                      SizedBox(
+                        width: 217,
+                        child: Text(
+                          'South Carolina SC. 4329 Khale Street, US.',
+                          style: GoogleFonts.nunito(
+                            fontSize: 20,
+                            color: grayDarkColor,
+                          ),
+                        ),
                       )
                     ],
                   ),
@@ -125,7 +183,120 @@ class Footer extends StatelessWidget {
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [],
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('Pages',
+                              style: GoogleFonts.nunito(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 10.0),
+                            child: Container(
+                              width: 34,
+                              height: 6,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(3),
+                                  color: grayDarkColor),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'FAQs',
+                            style: GoogleFonts.nunito(
+                              fontSize: 20,
+                              color: grayDarkColor,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 72,
+                          ),
+                          Text(
+                            'Popular',
+                            style: GoogleFonts.nunito(
+                              fontSize: 20,
+                              color: grayDarkColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Blog',
+                            style: GoogleFonts.nunito(
+                              fontSize: 20,
+                              color: grayDarkColor,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 80,
+                          ),
+                          Text(
+                            'How it Works',
+                            style: GoogleFonts.nunito(
+                              fontSize: 20,
+                              color: grayDarkColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 56,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('Social',
+                              style: GoogleFonts.nunito(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 10.0),
+                            child: Container(
+                              width: 34,
+                              height: 6,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(3),
+                                  color: grayDarkColor),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 17,
+                      ),
+                      Wrap(
+                        spacing: 10,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          Image.asset('assets/facebook.png'),
+                          Image.asset('assets/instagram.png'),
+                          Image.asset('assets/twitter.png'),
+                          Image.asset('assets/linkedin.png'),
+                        ],
+                      )
+                    ],
                   ),
                 ],
               )

@@ -149,6 +149,32 @@ class _HomeScreenState extends State<HomeScreen> {
                         Image.asset('assets/dots.png'),
                       ],
                     )),
+                Positioned(
+                    top: 6132 - (isScrolled ? scrollController.offset : 0),
+                    left: 15,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset('assets/dots.png'),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Image.asset('assets/dots.png'),
+                      ],
+                    )),
+                Positioned(
+                    top: 6872 - (isScrolled ? scrollController.offset : 0),
+                    right: 15,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Image.asset('assets/dots.png'),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Image.asset('assets/dots.png'),
+                      ],
+                    )),
               ]),
             ),
           ),

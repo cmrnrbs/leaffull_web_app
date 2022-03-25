@@ -10,6 +10,50 @@ class EightSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        Positioned(
+          top: 0,
+          left: 358,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 1,
+                height: 168,
+                color: lightTextColor.withOpacity(.15),
+              ),
+              SizedBox(
+                width: 520,
+              ),
+              Container(
+                width: 1,
+                height: 168,
+                color: lightTextColor.withOpacity(.15),
+              )
+            ],
+          ),
+        ),
+        Positioned(
+          bottom: 0,
+          left: 225,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 1,
+                height: 168,
+                color: lightTextColor.withOpacity(.15),
+              ),
+              SizedBox(
+                width: 619,
+              ),
+              Container(
+                width: 1,
+                height: 168,
+                color: lightTextColor.withOpacity(.15),
+              )
+            ],
+          ),
+        ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 196.0, vertical: 160),
           child: Column(

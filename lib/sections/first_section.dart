@@ -16,6 +16,36 @@ class FirstSection extends StatelessWidget {
           children: [
             Positioned(
                 top: 0,
+                left: 200,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 1,
+                      height: 548,
+                      color: lightTextColor.withOpacity(.15),
+                    ),
+                    SizedBox(
+                      width: 159,
+                    ),
+                    Container(
+                      width: 1,
+                      height: 399,
+                      color: lightTextColor.withOpacity(.15),
+                    ),
+                    SizedBox(
+                      width: 172,
+                    ),
+                    Container(
+                      width: 1,
+                      height: 186,
+                      color: lightTextColor.withOpacity(.15),
+                    ),
+                  ],
+                )),
+            Positioned(
+                top: 0,
                 right: 267,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
@@ -175,36 +205,6 @@ class FirstSection extends StatelessWidget {
                 top: 168,
                 right: 65,
                 child: Image.asset('assets/border-circle-half.png')),
-            Positioned(
-                top: 0,
-                left: 200,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      width: 1,
-                      height: 548,
-                      color: lightTextColor.withOpacity(.15),
-                    ),
-                    SizedBox(
-                      width: 159,
-                    ),
-                    Container(
-                      width: 1,
-                      height: 399,
-                      color: lightTextColor.withOpacity(.15),
-                    ),
-                    SizedBox(
-                      width: 172,
-                    ),
-                    Container(
-                      width: 1,
-                      height: 186,
-                      color: lightTextColor.withOpacity(.15),
-                    ),
-                  ],
-                )),
           ],
         ));
   }
